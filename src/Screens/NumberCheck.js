@@ -1,19 +1,18 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Language from "../components/language";
-import AuthorizationFrom from "../components/authorization";
 import {Container} from 'react-bootstrap';
+import NumberCheckForm from "../components/numberCheckForm";
 
-class Authorization extends React.Component {
+class NumberCheck extends React.Component {
     constructor(props) {
         super(props);
     }
     render() {
-        const windowHeight = window.innerHeight;
         return (
-            <Container fluid style={{backgroundColor: '#CCCCCC',height: `${windowHeight}px`}}>
+            <Container fluid style={{backgroundColor: '#CCCCCC'}}>
                 <Language />
-                <AuthorizationFrom />
+                <NumberCheckForm />
             </Container>
         );
     }
@@ -22,4 +21,4 @@ class Authorization extends React.Component {
 export default connect(
     (state) => ({  }),
     (dispatch) => ({  }),
-)(Authorization);
+)(NumberCheck);

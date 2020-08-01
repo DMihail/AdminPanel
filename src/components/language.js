@@ -22,17 +22,16 @@ class Language extends React.Component {
     }
 
     setRus = () => {
-        if (this.props.language === "ru") {
+        if (this.props.language === "rus") {
            return (
                <b style={styles}> Рус </b>
            )
         }
         return "Рус"
     }
-
     render() {
         return (
-            <Navbar bg="light" variant="light">
+            <Navbar bg="#CCCCCC" variant="#CCCCCC">
                 <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text onClick={() => {
                         this.props.setLanguage('UK')

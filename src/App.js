@@ -11,6 +11,7 @@ import thunk from 'redux-thunk';
 import {Provider} from 'react-redux';
 import Reducer from './redux/index';
 import Authorization from "./Screens/Authorization";
+import NumberCheck from "./Screens/NumberCheck";
 
 const store = createStore(Reducer, composeWithDevTools(applyMiddleware(thunk)));
 store.subscribe(() => {
@@ -27,16 +28,16 @@ export default function App() {
                     {/*        <Route path="/about" component={About} />*/}
                     {/*    </Router>*/}
                     {/*</Provider>*/}
-                    {/*<Provider store={store}>*/}
-                    {/*    <Router>*/}
-                    {/*        <Route path="/users" component={Users} />*/}
-                    {/*    </Router>*/}
-                    {/*</Provider>*/}
                     <Provider store={store}>
                         <Router>
                             <Route path="/" component={Authorization} />
                         </Router>
                     </Provider>
+                    {/*<Provider store={store}>*/}
+                    {/*    <Router>*/}
+                    {/*        <Route path="/numberCheck" component={NumberCheck} />*/}
+                    {/*    </Router>*/}
+                    {/*</Provider>*/}
                 </Switch>
         </Router>
     );
