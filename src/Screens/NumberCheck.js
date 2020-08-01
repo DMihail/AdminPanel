@@ -9,8 +9,9 @@ class NumberCheck extends React.Component {
         super(props);
     }
     render() {
+        const windowHeight = window.innerHeight;
         return (
-            <Container fluid style={{backgroundColor: '#CCCCCC'}}>
+            <Container fluid style={{backgroundColor: '#CCCCCC', height: `${windowHeight}px`}}>
                 <Language />
                 <NumberCheckForm />
             </Container>

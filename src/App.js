@@ -28,16 +28,16 @@ export default function App() {
                     {/*        <Route path="/about" component={About} />*/}
                     {/*    </Router>*/}
                     {/*</Provider>*/}
-                    <Provider store={store}>
-                        <Router>
-                            <Route path="/" component={Authorization} />
-                        </Router>
-                    </Provider>
                     {/*<Provider store={store}>*/}
                     {/*    <Router>*/}
-                    {/*        <Route path="/numberCheck" component={NumberCheck} />*/}
+                    {/*        <Route path="/" component={Authorization} />*/}
                     {/*    </Router>*/}
                     {/*</Provider>*/}
+                    <Provider store={store}>
+                        <Router>
+                            <Route path="/" component={NumberCheck} />
+                        </Router>
+                    </Provider>
                 </Switch>
         </Router>
     );
