@@ -1,8 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Language from "../components/language";
+import Language from "../components/Language";
 import {Container} from 'react-bootstrap';
-import DataDisplayForm from "../components/dataDisplayForm";
+import DataDisplayForm from "../components/DataDisplayForm";
 
 class dataDisplay extends React.Component {
     constructor(props) {

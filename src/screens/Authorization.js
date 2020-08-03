@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Language from "../components/language";
-import AuthorizationFrom from "../components/authorization";
+import Language from "../components/Language";
+import AuthorizationFrom from "../components/AuthorizationFrom";
 import {Container} from 'react-bootstrap';
 
 class Authorization extends React.Component {

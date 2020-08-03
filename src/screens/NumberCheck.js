@@ -1,8 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Language from "../components/language";
+import Language from "../components/Language";
 import {Container} from 'react-bootstrap';
-import NumberCheckForm from "../components/numberCheckForm";
+import NumberCheckForm from "../components/NumberCheckForm";
 
 class NumberCheck extends React.Component {
     constructor(props) {

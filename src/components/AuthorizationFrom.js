@@ -5,7 +5,7 @@ import language from "../language.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
 
-class Authorization extends React.Component {
+class AuthorizationFrom extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -71,4 +71,4 @@ export default connect(
         language: state.language
     }),
     (dispatch) => ({  }),
-)(Authorization);
+)(AuthorizationFrom);
