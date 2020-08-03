@@ -9,9 +9,9 @@ import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import {Provider} from 'react-redux';
 import Reducer from './redux/index';
-import Authorization from "./Screens/Authorization";
-import NumberCheck from "./Screens/NumberCheck";
-import DataDisplay from "./Screens/DataDisplay";
+import Authorization from "./screens/Authorization";
+import NumberCheck from "./screens/NumberCheck";
+import DataDisplay from "./screens/DataDisplay";
 
 const store = createStore(Reducer, composeWithDevTools(applyMiddleware(thunk)));
 store.subscribe(() => {
