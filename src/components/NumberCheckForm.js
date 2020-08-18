@@ -40,7 +40,7 @@ class NumberCheckForm extends React.Component {
             <Jumbotron fluid style={{backgroundColor: '#ffffff'}} className="col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4">
                 <h6 className="col-xs-8 offset-xs-2 col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">{language[this.props.language].checkNumber}</h6>
                 <Form>
-                    <Form.Group controlId="number">
+                    <Form.Group controlId="number" className="col-xs-10 offset-xs-1 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
                         <Form.Control type="tel" maxLength="15" placeholder="+(380) ___ __ __" value={this.state.tel} onChange={(e) => {
                             if (e.target.value.length >= 6) {
                                 this.setState({tel: e.target.value})
@@ -48,7 +48,7 @@ class NumberCheckForm extends React.Component {
                         }}/>
                     </Form.Group>
                     <Button variant="primary" type="submit" variant={this.state.color}  onClick={this.Send}
-                            className="col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4 "
+                            className="col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4"
                             onMouseOver={() => {
                         this.setState({color: 'warning'})}} onMouseOut={() => {this.setState({color: 'light'})}} disabled={this.state.disabled} onClick={() => {
                         this.props.checkScreen('DISPLAY_DATA');
@@ -65,5 +65,9 @@ export default connect(
     (state) => ({
         language: state.language
     }),
-    (dispatch) => ({  }),
+    (dispatch) => ({
+        checkScreen: (screen) => {
+            dispatch({type: 'CHECK_SCREEN', payload: screen});
+        },
+    }),
 )(NumberCheckForm);
