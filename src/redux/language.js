@@ -1,6 +1,6 @@
 const initialState = 'uk';
 
-const List = (state = initialState, action) => {
+const Language = (state = initialState, action) => {
     if (action.type === 'UK') {
         return 'uk';
     } else if (action.type === 'RU') {
@@ -9,4 +9,4 @@ const List = (state = initialState, action) => {
     return state;
 };
 
-export default List;
+export default Language;

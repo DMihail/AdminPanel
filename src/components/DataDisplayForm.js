@@ -5,10 +5,7 @@ import {Button, Jumbotron} from 'react-bootstrap';
 class DataDisplayForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-        }
     }
-
 
     render() {
         return (
