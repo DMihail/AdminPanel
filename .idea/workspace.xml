@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="28a67947-271c-4fba-8072-ff231a20160c" name="Default Changelist" comment="" />
+    <list default="true" id="28a67947-271c-4fba-8072-ff231a20160c" name="Default Changelist" comment="add .gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanel/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanel/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanel/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanelServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelServer/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanelServer/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelServer/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanelServer/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelServer/routes/users.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +44,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\WebstormProjects\AdminPanel" />
+      <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelServer" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="28a67947-271c-4fba-8072-ff231a20160c" name="Default Changelist" comment="" />
@@ -28,7 +62,52 @@
       <option name="presentableId" value="Default" />
       <updated>1597939761803</updated>
       <workItem from="1597939762865" duration="2000" />
+      <workItem from="1597939795762" duration="2237000" />
+      <workItem from="1597973718174" duration="231000" />
+      <workItem from="1597989874226" duration="8000" />
+      <workItem from="1598256422829" duration="311000" />
     </task>
+    <task id="LOCAL-00001" summary="add server">
+      <created>1597939961116</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597939961116</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add .gitignore">
+      <created>1597940098868</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597940098868</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add server" />
+    <MESSAGE value="add .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .gitignore" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597940108843">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1597940108843" />
   </component>
 </project>
