@@ -4,6 +4,7 @@ import {Form, Button, Jumbotron} from 'react-bootstrap';
 import language from "../language.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
+import {signIn} from "../function/request";
 
 class AuthorizationFrom extends React.Component {
     constructor(props) {
@@ -18,8 +19,12 @@ class AuthorizationFrom extends React.Component {
         this.Send = this.Send.bind(this);
     }
 
-    Send = (event) => {
+    Send = async (event) => {
         event.preventDefault();
+        const request = await signIn(this.state.login, this.state.password);
+        if (request.status === 200) {
+            this.props.checkScreen('CHECK_NUM');
+        }
     }
 
     componentDidUpdate(prevState) {
@@ -56,9 +61,7 @@ class AuthorizationFrom extends React.Component {
                     }} />
                 </Form.Group>
                 <Button variant="primary" type="submit" variant={this.state.color}  onClick={this.Send} onMouseOver={() => {
-                    this.setState({color: 'warning'})}} onMouseOut={() => {this.setState({color: 'light'})}} disabled={this.state.disabled} onClick={() => {
-                        this.props.checkScreen('CHECK_NUM');
-                }}
+                    this.setState({color: 'warning'})}} onMouseOut={() => {this.setState({color: 'light'})}} disabled={this.state.disabled}
                         className="col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4 ">
                     {language[this.props.language].next}
                 </Button>
