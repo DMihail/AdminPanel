@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28a67947-271c-4fba-8072-ff231a20160c" name="Default Changelist" comment="add .gitignore">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanel/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanel/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanel/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelServer/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelServer/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelServer/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelServer/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelServer/routes/users.js" afterDir="false" />
-    </list>
+    <list default="true" id="28a67947-271c-4fba-8072-ff231a20160c" name="Default Changelist" comment="use server with build" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +58,7 @@
       <workItem from="1597939795762" duration="2237000" />
       <workItem from="1597973718174" duration="231000" />
       <workItem from="1597989874226" duration="8000" />
-      <workItem from="1598256422829" duration="311000" />
+      <workItem from="1598256422829" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="add server">
       <created>1597939961116</created>
@@ -81,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597940098868</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="use server with build">
+      <created>1598256997992</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598256997992</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,7 +102,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add server" />
     <MESSAGE value="add .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add .gitignore" />
+    <MESSAGE value="use server with build" />
+    <option name="LAST_COMMIT_MESSAGE" value="use server with build" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1597940108843">
