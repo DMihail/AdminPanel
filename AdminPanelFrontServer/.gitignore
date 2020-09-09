@@ -22,8 +22,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .idea/
-.gitignore
-public/images/
-public/javascripts/
-AdminPanelBackEndServer/public/images/
-AdminPanelBackEndServer/public/javascripts/
