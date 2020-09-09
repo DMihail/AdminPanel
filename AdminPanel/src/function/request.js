@@ -8,7 +8,7 @@ export const signIn = async (login, password) => {
 }
 
 export const checkNumber = async (number) => {
-    return await axios.post('http://localhost:8080/checknuuber', {
+    return await axios.post('http://localhost:8080/checkNumber', {
         number,
     });
 }

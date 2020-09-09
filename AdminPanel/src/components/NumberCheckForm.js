@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Form, Button, Jumbotron} from 'react-bootstrap';
 import language from "../language.json";
+import {checkNumber} from "../function/request";
 
 class NumberCheckForm extends React.Component {
     constructor(props) {
@@ -15,7 +16,11 @@ class NumberCheckForm extends React.Component {
         this.Send = this.Send.bind(this);
     }
 
-    Send = (event) => {
+    Send = async (event) => {
+        const request = await checkNumber(this.state.tel);
+        if (request.status === 200) {
+            this.props.checkScreen('DISPLAY_DATA');
+        }
         event.preventDefault();
     }
 
@@ -50,9 +55,7 @@ class NumberCheckForm extends React.Component {
                     <Button variant="primary" type="submit" variant={this.state.color}  onClick={this.Send}
                             className="col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4"
                             onMouseOver={() => {
-                        this.setState({color: 'warning'})}} onMouseOut={() => {this.setState({color: 'light'})}} disabled={this.state.disabled} onClick={() => {
-                        this.props.checkScreen('DISPLAY_DATA');
-                    }}>
+                        this.setState({color: 'warning'})}} onMouseOut={() => {this.setState({color: 'light'})}} disabled={this.state.disabled} >
                         {language[this.props.language].check}
                     </Button>
                 </Form>

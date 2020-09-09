@@ -22,9 +22,9 @@ class AuthorizationFrom extends React.Component {
     Send = async (event) => {
         event.preventDefault();
         const request = await signIn(this.state.login, this.state.password);
-        if (request.status === 200) {
+        // if (request.status === 200) {
             this.props.checkScreen('CHECK_NUM');
-        }
+        // }
     }
 
     componentDidUpdate(prevState) {
