@@ -16,11 +16,11 @@ router.get('/api/subscribers/:number', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* GET json data. */
-router.get('/api/subscribers/:number', function(req, res, next) {
-  console.log(req.params.number);
-  res.render('index', { title: 'Express' });
-});
+// /* GET json data. */
+// router.get('/api/subscribers/:number', function(req, res, next) {
+//   console.log(req.params.number);
+//   res.render('index', { title: 'Express' });
+// });
 
 
 /* POST Authorization. */

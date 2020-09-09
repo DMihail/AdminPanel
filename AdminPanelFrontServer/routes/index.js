@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 
 const jsonParser = bodyParser.json();
 const urlencodedParser = bodyParser.urlencoded({extended: false});
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
@@ -14,7 +15,7 @@ router.post('/authorization', jsonParser, function(req, res, next) {
   res.send('authorization')
 });
 
-router.post('/checknuuber', jsonParser, function(req, res, next) {
+router.post('/checkNumber', jsonParser, function(req, res, next) {
   console.log(req.body)
   res.send('number')
 });
