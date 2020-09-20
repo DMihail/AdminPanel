@@ -19,20 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28a67947-271c-4fba-8072-ff231a20160c" name="Default Changelist" comment="add request functions">
+    <list default="true" id="28a67947-271c-4fba-8072-ff231a20160c" name="Default Changelist" comment="add new servers">
+      <change afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/functions/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanel/src/components/NumberCheckForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanel/src/components/NumberCheckForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanel/src/function/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanel/src/function/request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/bin/www" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/public/stylesheets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/routes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/routes/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/views/error.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/views/index.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/views/layout.pug" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminPanelFrontServer/functions/requestFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelFrontServer/functions/requestFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanelFrontServer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelFrontServer/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanelFrontServer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelFrontServer/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,18 +65,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AdminPanelBackEndServer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AdminPanelFrontServer" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelServer\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelFrontServer" />
       <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelBackEndServer" />
       <recent name="C:\Users\Admin\WebstormProjects\AdminPanel" />
       <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelServer" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelServer\public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start (3)">
@@ -162,6 +160,7 @@
       <workItem from="1600532864217" duration="11000" />
       <workItem from="1600533706858" duration="18000" />
       <workItem from="1600597664211" duration="631000" />
+      <workItem from="1600600974822" duration="5077000" />
     </task>
     <task id="LOCAL-00001" summary="add server">
       <created>1597939961116</created>
@@ -219,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599656392103</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add new servers">
+      <created>1600601117840</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600601117840</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,29 +252,30 @@
     <MESSAGE value="add back-end server" />
     <MESSAGE value="add api for get number data, authorization and registration" />
     <MESSAGE value="add request functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add request functions" />
+    <MESSAGE value="add new servers" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new servers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="147" y="65" key="DiffContextDialog" timestamp="1599638579008">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1599638579008" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1600433978644">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1600614010499">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600433978644" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1600433978644">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600614010499" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1600614010498">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600433978644" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1600433978644">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600614010498" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1600614010498">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600433978644" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1600433978644">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600614010498" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1600614010499">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600433978644" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600614010499" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1600013667986">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -317,9 +324,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1600013667986" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599647816057">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600601124675">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599647816057" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600601124675" />
   </component>
 </project>

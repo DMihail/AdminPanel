@@ -8,7 +8,7 @@ const authorization = async (userData) => {
             params: userData
         });
         if (response.status === 200) {
-            // console.log(response)
+            console.log(response)
             // res.send({status: true});
         }
     } catch (error) {

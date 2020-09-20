@@ -17,11 +17,11 @@ class NumberCheckForm extends React.Component {
     }
 
     Send = async (event) => {
+        event.preventDefault();
         const request = await checkNumber(this.state.tel);
         if (request.status === 200) {
             this.props.checkScreen('DISPLAY_DATA');
         }
-        event.preventDefault();
     }
 
     componentDidUpdate(prevState) {

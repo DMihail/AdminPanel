@@ -1,14 +1,14 @@
 import axios from 'axios';
 
 export const signIn = async (login, password) => {
-    return await axios.post('http://localhost:8080/authorization', {
+    return await axios.post('http://localhost:8000/authorization', {
         login,
         password
     });
 }
 
 export const checkNumber = async (number) => {
-    return await axios.post('http://localhost:8080/checkNumber', {
+    return await axios.post('http://localhost:8000/checkNumber', {
         number,
     });
 }
