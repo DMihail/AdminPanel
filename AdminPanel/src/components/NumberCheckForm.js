@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Form, Button, Jumbotron} from 'react-bootstrap';
+import {Form, Button, Jumbotron, Alert} from 'react-bootstrap';
 import language from "../language.json";
 import {checkNumber} from "../function/request";
 
@@ -12,6 +12,7 @@ class NumberCheckForm extends React.Component {
             send: false,
             color: 'light',
             disabled: true,
+            error: false,
         }
         this.Send = this.Send.bind(this);
     }
@@ -21,6 +22,18 @@ class NumberCheckForm extends React.Component {
         const request = await checkNumber(this.state.tel);
         if (request.status === 200) {
             this.props.checkScreen('DISPLAY_DATA');
+        }
+    }
+
+    setAlert = () => {
+        if (this.state.error) {
+            return (
+                <Alert variant={'danger'}
+                       className="col-xs-8 offset-xs-2 col-sm-8 offset-sm-2 col-md-6 offset-md-3
+                    col-lg-4 offset-lg-4 col-xl-10 offset-xl-1">
+                    Введите корректные номер!
+                </Alert>
+            )
         }
     }
 

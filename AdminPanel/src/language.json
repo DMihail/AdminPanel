@@ -8,7 +8,10 @@
   "checkNumber": "Проверка номера телефона",
   "number": "Номер",
   "locked": "заблокирован",
-  "notBlocked": "не заблокирован"
+  "notBlocked": "не заблокирован",
+  "notFoundNumber": "Номер не найден",
+  "incorrrectNumber": "Введите корректный номер",
+  "userNotFound": "Користувач не знайдений"
 },
   "uk" : {
     "notBlocked": "не заблокован",
@@ -19,6 +22,9 @@
     "password": "Введіть Пароль",
     "next": "Далі",
     "check": "Перевірити",
-    "checkNumber": "Перевірка номеру телефону"
+    "checkNumber": "Перевірка номеру телефону",
+    "notFoundNumber": "Номер не знайдений",
+    "incorrrectNumber": "Введіть коректний номер",
+    "userNotFound": "Пользователь не найден"
   }
 }

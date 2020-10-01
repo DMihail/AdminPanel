@@ -1,26 +1,33 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const request = require('./functions/requestFunctions');
-const jsonParser = bodyParser.json();
-const urlencodedParser = bodyParser.urlencoded({extended: false});
+const express = require('express'),
+    app = express(),
+    bodyParser = require('body-parser'),
+    session = require('express-session'),
+    request = require('./functions/requestFunctions'),
+   jsonParser = bodyParser.json();
 
-const app = express()
-/* GET home page. */
-app.get('/', function(req, res, next) {
-    res.render('index', { title: 'Express' });
-});
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+// app.use(express.static('./build'));
+app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 1500 }}))
+
+// Access the session as req.session
+// app.get('/', function(req, res, next) {
+//     res.sendFile(__dirname + "/build/index.html");
+// })
 
 app.post('/authorization', jsonParser, async (req, res, next) => {
-    console.log(1111111111111111, req.body);
-    await request.authorization(req.body);
-    res.send('authorization')
+    const resp = await request.authorization(req.body);
+    console.log(resp.data.token)
+    req.session.tocken = resp.data.token;
+    console.log(req.session)
+    res.sendStatus(200)
 });
 
 app.post('/checkNumber', jsonParser, async (req, res, next) => {
     console.log(req.body)
-    await request.getStatusNumber(req.body.number);
+    console.log(req.session)
+    // await request.getStatusNumber(req.body.number);
     res.send('number')
 });
 
-app.listen(8000)
-
+app.listen(8000);

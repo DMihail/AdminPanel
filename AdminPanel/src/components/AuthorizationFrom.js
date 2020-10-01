@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Form, Button, Jumbotron} from 'react-bootstrap';
+import {Form, Button, Jumbotron, Alert} from 'react-bootstrap';
 import language from "../language.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
@@ -15,15 +15,20 @@ class AuthorizationFrom extends React.Component {
             send: false,
             color: 'light',
             disabled: true,
+            error: false,
         }
         this.Send = this.Send.bind(this);
     }
 
     Send = async (event) => {
         event.preventDefault();
-        const request = await signIn(this.state.login, this.state.password);
+        // const request = await signIn(this.state.login, this.state.password);
+        // console.log(request)
         // if (request.status === 200) {
             this.props.checkScreen('CHECK_NUM');
+        //     this.setState({error: false})
+        // } else {
+        //     this.setState({error: true})
         // }
     }
 
@@ -40,6 +45,18 @@ class AuthorizationFrom extends React.Component {
                     send: false, disabled: true,
                 })
             }
+        }
+    }
+
+    setAlert = () => {
+        if (this.state.error) {
+            return (
+                <Alert variant={'danger'}
+                       className="col-xs-8 offset-xs-2 col-sm-8 offset-sm-2 col-md-6 offset-md-3
+                    col-lg-4 offset-lg-4 col-xl-10 offset-xl-1">
+                    {language[this.props.language].userNotFound}
+                </Alert>
+            )
         }
     }
 
@@ -60,6 +77,7 @@ class AuthorizationFrom extends React.Component {
                         this.setState({password: e.target.value})
                     }} />
                 </Form.Group>
+                {this.setAlert()}
                 <Button variant="primary" type="submit" variant={this.state.color}  onClick={this.Send} onMouseOver={() => {
                     this.setState({color: 'warning'})}} onMouseOut={() => {this.setState({color: 'light'})}} disabled={this.state.disabled}
                         className="col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4 ">

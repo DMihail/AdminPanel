@@ -6,7 +6,7 @@ class  Database {
     constructor() {
         this.db = undefined;
         this.dbName = 'adminpanel'
-
+        this.url = 'mongodb://admin:admin1@ds343718.mlab.com:43718/adminpanel';
         this.userCollection = undefined;
         this.numberCollection = undefined;
     }
@@ -18,6 +18,8 @@ class  Database {
              this.userCollection = this.db.collection("users");
              this.numberCollection = this.db.collection("numberstatus");
              // this.addUser();
+            this.findUser({    login: "david",
+                password: "123456"})
         }).catch(err => {
             assert.equal(null, err);
             throw err;
@@ -26,6 +28,8 @@ class  Database {
 
     async findUser(userData){
         return  await  this.userCollection.findOne(userData);
+        // const user = await  this.userCollection.findOne(userData);
+        // console.log(user)
     }
 
     async getNumberStatus(number){
@@ -53,7 +57,9 @@ class  Database {
     // }
 }
 
-// module.exports.Database = Database;
+// module.exports = {Database: Database};
+const  base = new Database();
+module.exports = base;
 
-const database = new Database();
-database.connect();
+// const database = new Database();
+// database.connect();
