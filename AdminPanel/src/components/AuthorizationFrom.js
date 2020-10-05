@@ -16,20 +16,20 @@ class AuthorizationFrom extends React.Component {
             color: 'light',
             disabled: true,
             error: false,
+            errorText: "",
         }
         this.Send = this.Send.bind(this);
     }
 
     Send = async (event) => {
         event.preventDefault();
-        // const request = await signIn(this.state.login, this.state.password);
-        // console.log(request)
-        // if (request.status === 200) {
+        const request = await signIn(this.state.login, this.state.password);
+        if (request.data.status === 200) {
             this.props.checkScreen('CHECK_NUM');
-        //     this.setState({error: false})
-        // } else {
-        //     this.setState({error: true})
-        // }
+            this.setState({error: false})
+        } else  if (request.data.status === 401) {
+            this.setState({error: true, errorText: language[this.props.language].userNotFound})
+        }
     }
 
     componentDidUpdate(prevState) {
@@ -54,7 +54,7 @@ class AuthorizationFrom extends React.Component {
                 <Alert variant={'danger'}
                        className="col-xs-8 offset-xs-2 col-sm-8 offset-sm-2 col-md-6 offset-md-3
                     col-lg-4 offset-lg-4 col-xl-10 offset-xl-1">
-                    {language[this.props.language].userNotFound}
+                    {this.state.errorText}
                 </Alert>
             )
         }

@@ -6,7 +6,7 @@ class  Database {
     constructor() {
         this.db = undefined;
         this.dbName = 'adminpanel'
-        this.url = 'mongodb://admin:admin1@ds343718.mlab.com:43718/adminpanel';
+
         this.userCollection = undefined;
         this.numberCollection = undefined;
     }
@@ -14,12 +14,10 @@ class  Database {
     // Use connect method to connect to the server
     connect() {
         MongoClient.connect(this.url, {useUnifiedTopology: true}).then(client => {
+            console.log('connect')
              this.db = client.db(this.dbName);
              this.userCollection = this.db.collection("users");
              this.numberCollection = this.db.collection("numberstatus");
-             // this.addUser();
-            this.findUser({    login: "david",
-                password: "123456"})
         }).catch(err => {
             assert.equal(null, err);
             throw err;
@@ -27,9 +25,8 @@ class  Database {
     }
 
     async findUser(userData){
+        console.log()
         return  await  this.userCollection.findOne(userData);
-        // const user = await  this.userCollection.findOne(userData);
-        // console.log(user)
     }
 
     async getNumberStatus(number){
@@ -48,18 +45,16 @@ class  Database {
 
     // addNumberAndStatus() {
     //     const _this = this;
-    //     const myobj = {login: "ananas", password: "123456"};
+    //     const myobj = {number: "+(380)123123124", statusNumber: "subscriber is blocke"};
     //     this.numberCollection.insertOne(myobj, function(err, res) {
     //         if (err) throw err;
     //         console.log("1 document inserted");
-    //         _this.db.close();
+    //         // _this.db.close();
     //     });
     // }
 }
 
-// module.exports = {Database: Database};
-const  base = new Database();
-module.exports = base;
+module.exports = Database;
 
 // const database = new Database();
 // database.connect();

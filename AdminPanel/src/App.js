@@ -8,7 +8,7 @@ import Authorization from "./screens/Authorization";
 
 const store = createStore(Reducer, composeWithDevTools(applyMiddleware(thunk)));
 store.subscribe(() => {
-    console.log('store', store.getState());
+    // console.log('store', store.getState());
 });
 
 

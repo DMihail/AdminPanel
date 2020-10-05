@@ -20,8 +20,11 @@ class NumberCheckForm extends React.Component {
     Send = async (event) => {
         event.preventDefault();
         const request = await checkNumber(this.state.tel);
-        if (request.status === 200) {
+        if (request.data.status === 200) {
+            this.props.addNumberStatus(request.data.statusNumber);
             this.props.checkScreen('DISPLAY_DATA');
+        } else {
+            this.setState({error: true});
         }
     }
 
@@ -31,7 +34,7 @@ class NumberCheckForm extends React.Component {
                 <Alert variant={'danger'}
                        className="col-xs-8 offset-xs-2 col-sm-8 offset-sm-2 col-md-6 offset-md-3
                     col-lg-4 offset-lg-4 col-xl-10 offset-xl-1">
-                    Введите корректные номер!
+                    Введите корректный номер!
                 </Alert>
             )
         }
@@ -84,6 +87,9 @@ export default connect(
     (dispatch) => ({
         checkScreen: (screen) => {
             dispatch({type: 'CHECK_SCREEN', payload: screen});
+        },
+        addNumberStatus: (status) => {
+            dispatch({type: 'ADD_NUMBER_STATUS', payload: status});
         },
     }),
 )(NumberCheckForm);
