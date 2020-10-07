@@ -5,22 +5,37 @@ import language from "../language.json";
 
 class DataDisplayForm extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
+    }
+
+    setStatus = () => {
+        let color, status;
+        if (this.props.store.statusNumber === 'subscriber is blocked') {
+            color = 'red';
+            status =  language[this.props.language].blocked;
+        } else if(this.props.store.statusNumber === 'active') {
+            color = 'green';
+            status =  language[this.props.language].active;
+        }
+        return (
+            <p style={{color: color}}>
+                {language[this.props.language].number} {this.props.store.number}. {status}
+            </p>
+        )
     }
 
     render() {
         return (
             <Jumbotron fluid style={{backgroundColor: '#ffffff', borderRadius: '5px'}} className="col-xs-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4">
                 <div style={{backgroundColor: '#ECECEC', borderRadius: '5px'}} className="col-xs-10 offset-xs-1 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
-                    <p style={{color: 'red'}}>
-                        {language[this.props.language].number} {this.props.numberStatus}                     </p>
+                    {this.setStatus()}
                 </div>
                 <Button variant="link" style={{marginLeft: '30px'}} onClick={() => {
                     this.props.checkScreen('AUTH');
-                }}>Назад</Button>
+                }}>{language[this.props.language].back}</Button>
                 <Button variant="link" style={{marginLeft: '300px'}} onClick={() => {
                     this.props.checkScreen('AUTH');
-                }}>Выйти</Button>
+                }}>{language[this.props.language].LogOff}</Button>
             </Jumbotron>
         );
     }
@@ -28,7 +43,7 @@ class DataDisplayForm extends React.Component {
 
 export default connect(
     (state) => ({
-        numberStatus: state.numberStatus,
+        store: state.numberStatus,
         language: state.language
     }),
     (dispatch) => ({

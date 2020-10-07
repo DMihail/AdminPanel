@@ -29,7 +29,7 @@ app.post('/checkNumber', jsonParser, async (req, res, next) => {
     // if (req.session.tocken) {
         const number = await request.getStatusNumber(req.body.number);
         if (number) {
-            res.send({status: 200, statusNumber : number.statusNumber, number: number.number})
+            res.send({status: 200, statusNumber : number.data.statusNumber, number: number.data.number})
         }
     // }
 });

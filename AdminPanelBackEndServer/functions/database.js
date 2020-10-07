@@ -6,7 +6,7 @@ class  Database {
     constructor() {
         this.db = undefined;
         this.dbName = 'adminpanel'
-
+        this.url = 'mongodb://admin:admin1@ds343718.mlab.com:43718/adminpanel';
         this.userCollection = undefined;
         this.numberCollection = undefined;
     }

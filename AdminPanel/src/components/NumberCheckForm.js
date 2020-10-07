@@ -21,7 +21,7 @@ class NumberCheckForm extends React.Component {
         event.preventDefault();
         const request = await checkNumber(this.state.tel);
         if (request.data.status === 200) {
-            this.props.addNumberStatus(request.data.statusNumber);
+            this.props.addNumberStatus(request.data);
             this.props.checkScreen('DISPLAY_DATA');
         } else {
             this.setState({error: true});
