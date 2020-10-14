@@ -30,8 +30,8 @@ app.post('/checkNumber', jsonParser, async (req, res, next) => {
         const number = await request.getStatusNumber(req.body.number);
         if (number) {
             res.send({status: 200, statusNumber : number.data.statusNumber, number: number.data.number})
-        }
-    // }
+        // }
+    }
 });
 
 app.listen(8000);

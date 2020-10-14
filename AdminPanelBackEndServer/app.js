@@ -12,9 +12,9 @@ const urlencodedParser = bodyParser.urlencoded({extended: false});
 
 /* GET xml data. */
 app.get('/api/subscribers/:number', async (req, res, next) => {
-    console.log(req.query)
-    const number = await database.getNumberStatus(req.query.number);
-    console.log(number)
+    // console.log(req.params.number);
+    const number = await database.getNumberStatus(req.params);
+    // console.log(number)
     if (number) {
         res.send({
             number: number.number,
