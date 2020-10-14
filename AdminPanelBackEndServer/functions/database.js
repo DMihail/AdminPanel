@@ -13,7 +13,13 @@ class  Database {
 
     // Use connect method to connect to the server
     connect() {
-        MongoClient.connect(this.url, {useUnifiedTopology: true}).then(client => {
+        MongoClient.connect(this.url, {
+            useUnifiedTopology: true,
+            // retry to connect for 60 times
+            reconnectTries: 60,
+            // wait 1 second before retrying
+            reconnectInterval: 1000
+        }).then(client => {
             console.log('connect')
              this.db = client.db(this.dbName);
              this.userCollection = this.db.collection("users");
