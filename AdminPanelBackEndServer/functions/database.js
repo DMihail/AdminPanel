@@ -1,12 +1,12 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-const assets = require('../serverData.json')
+const assets = require('../serverData.json');
 
 class  Database {
     constructor() {
         this.db = undefined;
-        this.dbName = assets.dbName
-        this.url = assets.dbUrl
+        this.dbName = assets.dbName;
+        this.url = assets.dbUrl;
         this.userCollection = undefined;
         this.numberCollection = undefined;
     }

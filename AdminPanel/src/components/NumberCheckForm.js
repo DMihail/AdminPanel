@@ -17,6 +17,14 @@ class NumberCheckForm extends React.Component {
         this.Send = this.Send.bind(this);
     }
 
+    componentDidMount() {
+        if (this.props.store) {
+            this.setState({
+                tel: this.props.store.number
+            })
+        }
+    }
+
     Send = async (event) => {
         event.preventDefault();
         const request = await checkNumber(this.state.tel);
@@ -82,6 +90,7 @@ class NumberCheckForm extends React.Component {
 
 export default connect(
     (state) => ({
+        store: state.numberStatus,
         language: state.language
     }),
     (dispatch) => ({

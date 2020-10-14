@@ -31,7 +31,7 @@ class DataDisplayForm extends React.Component {
                     {this.setStatus()}
                 </div>
                 <Button variant="link" style={{marginLeft: '30px'}} onClick={() => {
-                    this.props.checkScreen('AUTH');
+                    this.props.checkScreen('CHECK_NUM');
                 }}>{language[this.props.language].back}</Button>
                 <Button variant="link" style={{marginLeft: '300px'}} onClick={() => {
                     this.props.checkScreen('AUTH');
