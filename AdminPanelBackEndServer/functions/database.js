@@ -1,6 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 const assets = require('../serverData.json');
+const {lofInfo, lofError} = require('./logger');
 
 class  Database {
     constructor() {
@@ -20,47 +21,29 @@ class  Database {
             // wait 1 second before retrying
             reconnectInterval: 1000
         }).then(client => {
+            lofInfo("connect to base");
             console.log('connect')
              this.db = client.db(this.dbName);
              this.userCollection = this.db.collection("users");
              this.numberCollection = this.db.collection("numberstatus");
         }).catch(err => {
+            lofError("error connect to base " + JSON.stringify(err));
             assert.equal(null, err);
             throw err;
         });
     }
 
     async findUser(userData){
-        console.log()
+        lofInfo("find user from base" + userData);
         return  await  this.userCollection.findOne(userData);
     }
 
     async getNumberStatus(number){
+        lofInfo("find number from base" + number);
         return  await  this.numberCollection.findOne(number);
     }
 
-    // addUser() {
-    //     const _this = this;
-    //     const myobj = {login: "ananas", password: "123456"};
-    //     this.userCollection.insertOne(myobj, function(err, res) {
-    //         if (err) throw err;
-    //         console.log("1 document inserted");
-    //         _this.db.close();
-    //     });
-    // }
-
-    // addNumberAndStatus() {
-    //     const _this = this;
-    //     const myobj = {number: "+(380)123123124", statusNumber: "subscriber is blocke"};
-    //     this.numberCollection.insertOne(myobj, function(err, res) {
-    //         if (err) throw err;
-    //         console.log("1 document inserted");
-    //         // _this.db.close();
-    //     });
-    // }
 }
 
 module.exports = Database;
 
-// const database = new Database();
-// database.connect();

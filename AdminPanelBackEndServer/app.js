@@ -4,44 +4,51 @@ const hash = require('object-hash');
 const base = require("./functions/database");
 const app = express()
 const database = new base();
+const {lofInfo, lofError} = require('./functions/logger');
 database.connect();
 
 const jsonParser = bodyParser.json();
 
 const urlencodedParser = bodyParser.urlencoded({extended: false});
 
-/* GET xml data. */
 app.get('/api/subscribers/:number', async (req, res, next) => {
-    // console.log(req.params.number);
     const number = await database.getNumberStatus(req.params);
-    // console.log(number)
     if (number) {
+        lofInfo("find status number" + JSON.stringify(number));
         res.send({
             number: number.number,
             statusNumber: number.statusNumber
         })
-    } else {
+    } else if (number === null){
+        lofInfo("find status number" + JSON.stringify(number));
         res.status(500).send({
             "error": "Number is not found"
         })
+    } else {
+        lofError("error find number " + JSON.stringify(number));
     }
 });
 
 
-/* POST get token. */
 app.get('/api/front/token', jsonParser, async (req, res, next) => {
-    console.log(req.query)
     const user = await database.findUser(req.query);
     if (user) {
+        lofInfo("find user" + JSON.stringify(user));
         const tocken = hash.sha1(req.query);
         res.status(200).send({
             tocken
         })
-    } else {
+    } else if (user === null) {
+        lofInfo("find user" + JSON.stringify(user));
         res.status(200).send({
             "error": "Login or password are wrong"
         })
+    } else {
+        lofError("error find user " + JSON.stringify(user))
     }
 });
 
-app.listen(5000)
+app.listen(5000, () => {
+    lofInfo("start server" + 5000)
+    console.log("start server" + 5000)
+})
