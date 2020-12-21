@@ -4,3 +4,84 @@
 {"message":"find user[object Object]","level":"info","service":"user-service"}
 {"message":"find number from base[object Object]","level":"info","service":"user-service"}
 {"message":"find status number[object Object]","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"error connect to base {\"ok\":0,\"code\":48,\"codeName\":\"NamespaceExists\",\"name\":\"MongoError\"}","level":"error","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"error connect to base {\"ok\":0,\"code\":48,\"codeName\":\"NamespaceExists\",\"name\":\"MongoError\"}","level":"error","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"find user from base[object Object]","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}
+{"message":"start server5000","level":"info","service":"user-service"}
+{"message":"connect to base","level":"info","service":"user-service"}

@@ -1,0 +1,58 @@
+{
+  "numberstatus" : [
+    {
+      "number": "+(380)123123123",
+      "statusNumber": "subscriber is blocked"
+    },
+    {
+      "number": "+(380)123123121",
+      "statusNumber": "active"
+    },
+    {
+      "number": "+(380)123123122",
+      "statusNumber": "active"
+    },
+    {
+      "number": "+(380)123123126",
+      "statusNumber": "active"
+    },
+    {
+      "number": "+(380)123123125",
+      "statusNumber": "subscriber is blocke"
+    },
+    {
+      "number": "+(380)123123124",
+      "statusNumber": "subscriber is blocke"
+    }
+  ],
+  "users": [
+    {
+      "login": "davidid",
+      "password": "12345678"
+    },
+    {
+      "login": "oleg",
+      "password": "123456"
+    },
+    {
+      "login": "anna",
+      "password": "123456"
+    },
+    {
+      "login": "pavel",
+      "password": "123456"
+    },
+    {
+      "login": "asta",
+      "password": "123456"
+    },
+    {
+      "login": "back",
+      "password": "123456"
+    },
+    {
+      "login": "ananas",
+      "password": "123456"
+    }
+  ]
+}

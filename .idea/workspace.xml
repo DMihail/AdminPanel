@@ -20,22 +20,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28a67947-271c-4fba-8072-ff231a20160c" name="Default Changelist" comment="timing database">
-      <change afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/combined.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/functions/logger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/assets/defaultValue/value.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/serverData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/combined.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/functions/logger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/asset-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/precache-manifest.abbfa7f99ff056dd99cf3d02539bf539.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/service-worker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/static/css/2.11829350.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/static/css/2.11829350.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/static/css/main.69eda509.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/static/css/main.69eda509.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/static/js/2.63d22e20.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/static/js/2.63d22e20.chunk.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/static/js/2.63d22e20.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/static/js/main.96d0a48f.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/static/js/main.96d0a48f.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/static/js/runtime-main.32e3b4e5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdminPanelFrontServer/build/static/js/runtime-main.32e3b4e5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AdminPanel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AdminPanel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/combined.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/functions/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/functions/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminPanelBackEndServer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelBackEndServer/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelFrontServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelFrontServer/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelFrontServer/functions/requestFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelFrontServer/functions/requestFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminPanelFrontServer/combined.log" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelFrontServer/combined.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdminPanelFrontServer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelFrontServer/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminPanelFrontServer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdminPanelFrontServer/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,27 +80,33 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AdminPanelBackEndServer/functions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AdminPanelFrontServer" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelBackEndServer" />
-      <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelServer\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelBackEndServer\functions" />
       <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelFrontServer" />
+      <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelBackEndServer\functions" />
       <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelBackEndServer" />
       <recent name="C:\Users\Admin\WebstormProjects\AdminPanel" />
       <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelServer" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelBackEndServer" />
+      <recent name="C:\Users\Admin\WebstormProjects\AdminPanel\AdminPanelServer\public" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.start (3)">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="    {}" />
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.start (2)">
     <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/AdminPanel/package.json" />
       <command value="run" />
@@ -207,6 +223,9 @@
       <workItem from="1602751134179" duration="1188000" />
       <workItem from="1602846733015" duration="21000" />
       <workItem from="1603022808392" duration="4890000" />
+      <workItem from="1608388248991" duration="672000" />
+      <workItem from="1608389671206" duration="1000" />
+      <workItem from="1608541727497" duration="6569000" />
     </task>
     <task id="LOCAL-00001" summary="add server">
       <created>1597939961116</created>
@@ -386,99 +405,5 @@
     <MESSAGE value="fix session" />
     <MESSAGE value="timing database" />
     <option name="LAST_COMMIT_MESSAGE" value="timing database" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603026453612">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603026453612" />
-    <state x="147" y="65" key="DiffContextDialog" timestamp="1599638579008">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1599638579008" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1602593650717">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602593650717" />
-    <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1603027817806">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603027817806" />
-    <state width="1515" height="261" key="GridCell.Tab.0.center" timestamp="1603027817806">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603027817806" />
-    <state width="1515" height="261" key="GridCell.Tab.0.left" timestamp="1603027817806">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603027817806" />
-    <state width="1515" height="261" key="GridCell.Tab.0.right" timestamp="1603027817806">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603027817806" />
-    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1603027817807">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603027817807" />
-    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1603027817806">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603027817806" />
-    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1603027817806">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603027817806" />
-    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1603027817806">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603027817806" />
-    <state width="1515" height="261" key="GridCell.Tab.2.bottom" timestamp="1603027817807">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603027817807" />
-    <state width="1515" height="261" key="GridCell.Tab.2.center" timestamp="1603027817807">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603027817807" />
-    <state width="1515" height="261" key="GridCell.Tab.2.left" timestamp="1603027817807">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603027817807" />
-    <state width="1515" height="261" key="GridCell.Tab.2.right" timestamp="1603027817807">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603027817807" />
-    <state width="1515" height="261" key="GridCell.Tab.3.bottom" timestamp="1603027817807">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603027817807" />
-    <state width="1515" height="261" key="GridCell.Tab.3.center" timestamp="1603027817807">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1603027817807" />
-    <state width="1515" height="261" key="GridCell.Tab.3.left" timestamp="1603027817807">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1603027817807" />
-    <state width="1515" height="261" key="GridCell.Tab.3.right" timestamp="1603027817807">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603027817807" />
-    <state x="349" y="147" key="IDE.errors.dialog" timestamp="1603025085291">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1603025085291" />
-    <state x="554" y="115" key="RollbackChangesDialog" timestamp="1602668065585">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="554" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1602668065585" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602675080400">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602675080400" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1601897826941">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601897826941" />
   </component>
 </project>
